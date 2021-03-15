@@ -23,9 +23,13 @@ int main()
             count=B[a];
             for(j=a+1;j<=b;j++)
             {
-
+                if(B[j]>count)
+                {
+                    count=B[j];
+                }
             }
+            printf("%d\n" ,count);
         }
     }
-
+    return 0;
 }
