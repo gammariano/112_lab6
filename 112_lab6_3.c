@@ -17,6 +17,15 @@ int main()
             scanf("%d %d" ,&i,&z);
             B[i]=z;
         }
+        else if(A[0]=='P')
+        {
+            scanf("%d %d" ,&a,&b);
+            count=B[a];
+            for(j=a+1;j<=b;j++)
+            {
+
+            }
+        }
     }
 
 }
