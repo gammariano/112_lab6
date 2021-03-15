@@ -5,7 +5,7 @@ int main()
     int i,j,count;
     char s[100][100],t[1000];
     scanf("%d",&count);
-    for(i=1;i<=count;i++)
+    for(i=0;i<=count-1;i++)
     {
         scanf("%s" ,s[i]);
     }
