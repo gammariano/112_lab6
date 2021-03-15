@@ -62,6 +62,29 @@ int main()
                 }
             }
         }
+        else if(pen[i]=='L')
+        {
+            if(n>0)
+            {
+                if(draw[m][n]=='.')
+                {
+                    draw[m][n]='-';
+                }
+                else if(draw[m][n]=='|')
+                {
+                    draw[m][n]='+';
+                }
+                m--;
+                if(draw[m][n]=='.')
+                {
+                    draw[m][n]='-';
+                }
+                else if(draw[m][n]=='|')
+                {
+                    draw[m][n]='+';
+                }
+            }
+        }
     }
 
     return 0;
