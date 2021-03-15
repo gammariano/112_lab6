@@ -20,6 +20,17 @@ int main()
         if(sum1%area==0)
         {
             sum2=sum1;
+            break;
+        }
+        else if((num1-i)%area==0)
+        {
+            sum2=num1-i;
+            break;
+        }
+        else if((num2+i)%area==0)
+        {
+            sum2=num2+i;
+            break;
         }
     }
 
