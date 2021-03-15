@@ -9,6 +9,16 @@ int main()
     {
         gets(s[i]);
     }
+    for(i=0;i<=count;i++)
+    {
+        for(j=i+1;j<=count;j++)
+        {
+            if(strcmp(s[i],s[j])>0)
+            {
+
+            }
+        }
+    }
 
 
     return 0;
