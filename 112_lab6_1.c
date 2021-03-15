@@ -3,7 +3,7 @@
 int main()
 {
     int i,j,count;
-    char s[25][25],t[25];
+    char s[100][100],t[1000];
     scanf("%d",&count);
     for(i=0;i<=count;i++)
     {
@@ -21,7 +21,9 @@ int main()
             }
         }
     }
-
-
+    for(i=0;i<=count;i++)
+    {
+        puts(s[i]);
+    }
     return 0;
 }
