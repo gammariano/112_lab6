@@ -3,7 +3,7 @@
 int main()
 {
     int paper,i,j,k,m=0,n=0;
-    char pen[250];
+    char pen[500];
     scanf("%d" ,&paper);
     char draw[paper][paper];
     scanf("%s" ,pen);
@@ -14,11 +14,11 @@ int main()
             draw[i][j]='.';
         }
     }
-    for(m=0;m<strlen(pen);m++)
+    for(i=0;i<strlen(pen);i++)
     {
         if(pen[i]=='U')
         {
-            if(n>0)
+            if(m>0)
             {
                 if(draw[m][n]=='.')
                 {
@@ -74,7 +74,7 @@ int main()
                 {
                     draw[m][n]='+';
                 }
-                m--;
+                n--;
                 if(draw[m][n]=='.')
                 {
                     draw[m][n]='-';
@@ -97,7 +97,7 @@ int main()
                 {
                     draw[m][n]='+';
                 }
-                m++;
+                n++;
                 if(draw[m][n]=='.')
                 {
                     draw[m][n]='-';
@@ -113,8 +113,9 @@ int main()
     {
         for(j=0;j<paper;j++)
         {
-            printf("%c\n" ,draw[i][j]);
+            printf("%c" ,draw[i][j]);
         }
+        printf("\n");
     }
     return 0;
 }
