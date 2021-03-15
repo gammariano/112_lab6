@@ -14,6 +14,19 @@ int main()
             draw[i][j]='.';
         }
     }
+    for(m=0;m<strlen(pen);m++)
+    {
+        if(pen[m]=='U')
+        {
+            if(n>0)
+            {
+                if(draw[n][k]=='.')
+                {
+                    draw[n][k]='|';
+                }
+            }
+        }
+    }
 
     return 0;
 }
