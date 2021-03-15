@@ -85,7 +85,36 @@ int main()
                 }
             }
         }
+        else if(pen[i]=='R')
+        {
+            if(n<paper-1)
+            {
+                if(draw[m][n]=='.')
+                {
+                    draw[m][n]='-';
+                }
+                else if(draw[m][n]=='|')
+                {
+                    draw[m][n]='+';
+                }
+                m++;
+                if(draw[m][n]=='.')
+                {
+                    draw[m][n]='-';
+                }
+                else if(draw[m][n]=='|')
+                {
+                    draw[m][n]='+';
+                }
+            }
+        }
     }
-
+    for(i=0;i<paper;i++)
+    {
+        for(j=0;j<paper;j++)
+        {
+            printf("%c\n" ,draw[i][j]);
+        }
+    }
     return 0;
 }
