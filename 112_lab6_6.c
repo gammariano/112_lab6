@@ -16,13 +16,49 @@ int main()
     }
     for(m=0;m<strlen(pen);m++)
     {
-        if(pen[m]=='U')
+        if(pen[i]=='U')
         {
             if(n>0)
             {
-                if(draw[n][k]=='.')
+                if(draw[m][n]=='.')
                 {
-                    draw[n][k]='|';
+                    draw[m][n]='|';
+                }
+                else if(draw[m][n]=='-')
+                {
+                    draw[m][n]='+';
+                }
+                m--;
+                if(draw[m][n]=='.')
+                {
+                    draw[m][n]='|';
+                }
+                else if(draw[m][n]=='-')
+                {
+                    draw[m][n]='+';
+                }
+            }
+        }
+        else if(pen[i]=='D')
+        {
+            if(m<paper-1)
+            {
+                if(draw[m][n]=='.')
+                {
+                    draw[m][n]='|';
+                }
+                else if(draw[m][n]=='-')
+                {
+                    draw[m][n]='+';
+                }
+                m++;
+                if(draw[m][n]=='.')
+                {
+                    draw[m][n]='|';
+                }
+                else if(draw[m][n]=='-')
+                {
+                    draw[m][n]='+';
                 }
             }
         }
