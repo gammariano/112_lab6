@@ -27,6 +27,16 @@ int main()
             min_num=star[i];
         }
     }
-
+    for(i=0;i<num;i++);
+    {
+        if(max_num==star[i])
+        {
+            printf("%d " ,i+1);
+        }
+        else if(min_num==star[i])
+        {
+            printf("%d " ,i+1);
+        }
+    }
     return 0;
 }
