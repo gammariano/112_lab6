@@ -15,7 +15,9 @@ int main()
         {
             if(strcmp(s[i],s[j])>0)
             {
-
+                strcpy(t,s[i]);
+                strcpy(s[i],s[j]);
+                strcpy(s[j],t);
             }
         }
     }
