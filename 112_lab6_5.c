@@ -14,5 +14,13 @@ int main()
         num1=sum1;
         num2=sum1;
     }
+    int area=width*height;
+    for(i=1;i<area;i++)
+    {
+        if(sum1%area==0)
+        {
+            sum2=sum1;
+        }
+    }
 
 }
