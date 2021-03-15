@@ -33,5 +33,14 @@ int main()
             break;
         }
     }
-
+    if(sum2-sum1>sum1-sum2)
+    {
+        sum2-=sum1;
+    }
+    else
+    {
+        sum2=sum1-sum2;
+    }
+    printf("%d" ,sum2);
+    return 0;
 }
