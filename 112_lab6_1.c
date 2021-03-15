@@ -5,9 +5,9 @@ int main()
     int i,j,count;
     char s[100][100],t[1000];
     scanf("%d",&count);
-    for(i=0;i<=count;i++)
+    for(i=1;i<=count;i++)
     {
-        gets(s[i]);
+        scanf("%s" ,s[i]);
     }
     for(i=0;i<=count;i++)
     {
@@ -23,7 +23,7 @@ int main()
     }
     for(i=0;i<=count;i++)
     {
-        puts(s[i]);
+        printf("%s\n" ,s[i]);
     }
     return 0;
 }
