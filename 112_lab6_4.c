@@ -14,6 +14,19 @@ int main()
         star[vote1-1]=star[vote1-1]+1;
         star[vote2-1]=star[vote2-1]+1;
     }
+    max_num=star[0];
+    min_num=star[0];
+    for(i=1;i<num;i++)
+    {
+        if(max_num<star[i])
+        {
+            max_num=star[i];
+        }
+        if(min_num>star[i])
+        {
+            min_num=star[i];
+        }
+    }
 
     return 0;
 }
